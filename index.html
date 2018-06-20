@@ -1,0 +1,132 @@
+ <!doctype html>
+<!--
+Just as a disclaimer, I pretty much copied a tutorial/template from Adobe,
+from a video taching people how to use Dreamweaver, so before you get all
+impressed with my web design skillz, please know that I have very little
+actual knowledge of what I'm doing and probably committed some form of
+intellectual property theft. Sorry Adobe!
+-Matthew
+PS ur a nerd
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Scholte, Keri</title>
+<link href="main.css" rel="stylesheet" type="text/css">
+	
+	<script>
+function myFunction() {
+    var month = new Array();
+    month[0] = "January";
+    month[1] = "February";
+    month[2] = "March";
+    month[3] = "April";
+    month[4] = "May";
+    month[5] = "June";
+    month[6] = "July";
+    month[7] = "August";
+    month[8] = "September";
+    month[9] = "October";
+    month[10] = "November";
+    month[11] = "December";
+
+    var d = new Date();
+    var n = month[d.getMonth()] +' '+ [d.getDate()];
+    document.getElementById("date").innerHTML = n;
+}
+</script>
+	
+</head>
+
+<body>
+	<body onLoad="myFunction()"></body>
+	<header>
+		 <a class="site-logo">
+          <img class="logo" src="images/signature.png">
+      </a>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="https://www.instagram.com/kerieats/">Dining</a></li>
+				<li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+	</header>
+	
+	
+	    <!-- Main Content -->
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+        	<div class="hero-content">
+				<h2>honey-bunny<br>raspberry marmalade<br>garnished<br>with fresh-cut thyme</h2>
+				<h3> today is <h3 id="date"></h3><h3> and you can change the world</h3></h3>
+            </div>
+        </section>
+	
+		
+	<section class="artworks">
+            <article class="artwork">
+                <div class="artwork-piece">
+                    <figure>
+                 		<img src="images/headshot.jpg">
+                  </figure>
+                </div>
+                <div class="artwork-description">
+                    <p class="artwork-title">Hello, my name is Keri Scholte, I am a third year Civil Engineering student at UCLA. Special interest in schools, systems, soldering, embroidery, maps and steaming clothes. who bring good news, who bring good news, who bring good news, #youmesameteam</p>
+                </div>
+            </article>
+        </section>
+    
+	
+	<!-- Intro -->
+        <section class="intro">
+        <div class="intro-text">
+                <p>"How beautiful on the mountains
+    are the feet of those who bring good news,
+who proclaim peace,
+    who bring good tidings,
+    who proclaim salvation,
+who say to Zion,
+    'Your God reigns!'"<br>Isaiah 52:7</p>
+            </div>
+        </section>
+		
+		</main>
+
+    <!-- Site Footer (hidden for lesson) -->
+    <footer>
+    <div class="footer-content">
+            <ul class="footer-social">
+                <li>
+                    <a href="https://www.instagram.com/keri.scholte/">
+                        <img class="social-default" src="images/social_insta.png">
+                        <img class="social-hover" src="images/social_insta.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="social-default" src="images/social_linked.png">
+                        <img class="social-hover" src="images/social_linked.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/kerischolte">
+                        <img class="social-default" src="images/social_twitter.png">
+                        <img class="social-hover" src="images/social_twitter.png">
+                    </a>
+                </li>
+            </ul>
+            <div class="footer-info">
+                <p class="footer-credit">Website design by <a href="http://www.artforsocialites.com">Matthew Gilbert</a></p>
+                <p class="footer-disclaimer">Any and all published material on this site is the property, intellectual or material, of Ms. Keri A. Scholte.</p>
+                <p class="footer-legal">&copy; 2018 Keri Scholte. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

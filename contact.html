@@ -1,0 +1,145 @@
+ <!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Scholte, Keri</title>
+<link href="second.css" rel="stylesheet" type="text/css">
+	
+<script type="text/javascript" src="contact/modernizr.custom.js"></script>
+	
+</head>
+
+<body>
+	<header>
+		 <a class="site-logo">
+          <img class="logo" src="images/signature.png">
+      </a>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="https://www.instagram.com/kerieats/">Dining</a></li>
+				<li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+	</header>
+	
+	
+	    <!-- Main Content -->
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+        	<div class="hero-content">
+				
+				<h1>Send Me a Message</h1><span><h3>I'll get back to you as soon as I can!</h3></span>
+			
+			<section>
+				<form id="theForm" class="simform" autocomplete="off">
+					<div class="simform-inner">
+						<ol class="questions">
+							<li>
+								<span><label for="q1">What's your name?</label></span>
+								<input id="q1" name="q1" type="text"/>
+							</li>
+							<li>
+								<span><label for="q2">Where do you live?</label></span>
+								<input id="q2" name="q2" type="text"/>
+							</li>
+							<li>
+								<span><label for="q3">What is your email?</label></span>
+								<input id="q3" name="q3" type="text"/>
+							</li>
+							<li>
+								<span><label for="q4">What is your inquiry?</label></span>
+								<input id="q4" name="q4" type="text"/>
+							</li>
+						</ol><!-- /questions -->
+						<button class="submit" type="submit">Send answers</button>
+						<div class="controls">
+							<button class="next"></button>
+							<div class="progress"></div>
+							<span class="number">
+								<span class="number-current"></span>
+								<span class="number-total"></span>
+							</span>
+							<span class="error-message"></span>
+						</div><!-- / controls -->
+					</div><!-- /simform-inner -->
+					<span class="final-message"></span>
+				</form><!-- /simform -->			
+			</section>
+		</div><!-- /container -->
+		<script src="contact/classie.js"></script>
+		<script src="contact/stepsForm.js"></script>
+		<script>
+			var theForm = document.getElementById( 'theForm' );
+
+			new stepsForm( theForm, {
+				onSubmit : function( form ) {
+					// hide form
+					classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
+
+					/*
+					form.submit()
+					or
+					AJAX request (maybe show loading indicator while we don't have an answer..)
+					*/
+
+					// let's just simulate something...
+					var messageEl = theForm.querySelector( '.final-message' );
+					messageEl.innerHTML = 'Thank you! I\'ll be in touch with you shortly.';
+					classie.addClass( messageEl, 'show' );
+				}
+			} );
+		</script>
+				
+        </section>
+	
+	<!-- Intro -->
+        <section class="intro">
+        <div class="intro-text">
+                <p>"How beautiful on the mountains
+    are the feet of those who bring good news,
+who proclaim peace,
+    who bring good tidings,
+    who proclaim salvation,
+who say to Zion,
+    'Your God reigns!'"<br>Isaiah 52:7</p>
+            </div>
+        </section>
+
+    <!-- Site Footer (hidden for lesson) -->
+    <footer>
+    <div class="footer-content">
+            <ul class="footer-social">
+                <li>
+                    <a href="https://www.instagram.com/keri.scholte/">
+                        <img class="social-default" src="images/social_insta.png">
+                        <img class="social-hover" src="images/social_insta.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="social-default" src="images/social_linked.png">
+                        <img class="social-hover" src="images/social_linked.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/kerischolte">
+                        <img class="social-default" src="images/social_twitter.png">
+                        <img class="social-hover" src="images/social_twitter.png">
+                    </a>
+                </li>
+            </ul>
+            <div class="footer-info">
+                <p class="footer-credit">Website design by <a href="http://www.artforsocialites.com">Matthew Gilbert</a></p>
+                <p class="footer-disclaimer">Any and all published material on this site is the property, intellectual or material, of Ms. Keri A. Scholte.</p>
+                <p class="footer-legal">&copy; 2018 Keri Scholte. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
